@@ -19,64 +19,84 @@
     <script src="https://kit.fontawesome.com/f5e67f8077.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                accent: '#179800'
-              },
-              fontFamily:{
-                soraFont: ["Sora", "serif"],
-              }
-              
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        accent: '#179800'
+                    },
+                    fontFamily: {
+                        soraFont: ["Sora", "serif"],
+                    }
+
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <style>
-        .font-sora{
+        .font-sora {
             /* font-family: "Sora", serif; */
-          
+
         }
     </style>
 </head>
 
-<body>  
-   <div class="container mx-auto">
+<body class="font-soraFont">
     <header>
+        <div class="container mx-auto">
+            <nav class="flex justify-between items-center py-1 px-2">
+                <div>
+                    <img src="./images/logo-header.png" alt="">
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex space-x-4 text-xl">
+                        <li>Product</li>
+                        <li>Services</li>
+                        <li>Contact Us</li>
 
-        <nav class="flex justify-between items-center py-1 px-2">
-            <div>
-                <img src="./images/logo-header.png" alt="">
-            </div>
-            <div class="hidden md:block">
-                <ul class="flex space-x-4 text-xl">
-                    <li>Product</li>
-                    <li>Services</li>
-                    <li>Contact Us</li>
-                   
-                </ul>
-            </div>
-            <div class="">
-                <i class="fa-solid fa-bars inline md:hidden text-4xl font-bold"></i>
+                    </ul>
+                </div>
+                <div class="">
+                    <i class="fa-solid fa-bars inline md:hidden text-4xl font-bold"></i>
 
-               <div class="space-x-2 hidden md:block">
-                <i class="fa-solid fa-magnifying-glass text-xl"></i>
-                <i class="fa-solid fa-cart-shopping text-xl"></i>
-                <button class="rounded-lg text-xl font-bold border-2 border-green-600 py-2 px-6 ">Log In</button>
-                <button class="rounded-lg text-white text-xl font-bold border-2 border-green-600 bg-accent py-2 px-6 ">Register</button>
-               </div>
-            </div>
-        </nav>
+                    <div class="space-x-2 hidden md:block">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                        <button class="rounded-lg text-xl font-bold border-2 border-green-600 py-2 px-6 ">Log
+                            In</button>
+                        <button
+                            class="rounded-lg text-white text-xl font-bold border-2 border-green-600 bg-accent py-2 px-6 ">Register</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-        
+        <!-- banner part start -->
+        <section class="my-20 bg-gradient-to-t from-[#EFEBE3] to-white">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <h3 class="font-bold md:text-6xl text-2xl">
+                        Freshness <span class="text-accent">You Can</span>
+                        <br>
+                        <span class="text-accent">Count</span> On, Prices You’ll Love!
+                    </h3>
+                    <p class="md:w-2/4 mx-auto my-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+    
+                </div>
+                <div class="flex justify-center">
+                    <img src="./images/hero-vegetables.png" alt="">
+                </div>
+    
+            </div>
+    
+        </section>
     </header>
-   </div>
+   
     <main></main>
     <footer></footer>
 
-    
+
 
 </body>
 
