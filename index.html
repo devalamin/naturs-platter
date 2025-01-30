@@ -23,7 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        accent: '#179800'
+                        accent: '#179800',
+                        'common-color':'#EFEBE3'
                     },
                     fontFamily: {
                         soraFont: ["Sora", "serif"],
@@ -35,15 +36,15 @@
     </script>
 
     <style>
-        .font-sora {
-            /* font-family: "Sora", serif; */
-
-        }
+       section{
+        margin: 80px 0;
+       }
     </style>
 </head>
 
 <body class="font-soraFont">
     <header>
+        <!-- nav part start -->
         <div class="container mx-auto">
             <nav class="flex justify-between items-center py-1 px-2">
                 <div>
@@ -73,7 +74,7 @@
         </div>
 
         <!-- banner part start -->
-        <section class="my-20 bg-gradient-to-t from-[#EFEBE3] to-white">
+        <section class="bg-gradient-to-t from-[#EFEBE3] to-white">
             <div class="container mx-auto">
                 <div class="text-center">
                     <h3 class="font-bold md:text-6xl text-2xl">
@@ -93,7 +94,38 @@
         </section>
     </header>
    
-    <main></main>
+    <main>
+        <!-- service part -->
+         <section>
+            <div class="container mx-auto px-10 md:px-0">
+                <h2 class="text-2xl font-bold text-accent mb-10">Services</h2>
+               <div class="flex justify-between flex-col md:flex-row gap-5">
+                <div class="bg-common-color text-center p-10 rounded-xl">
+                    <div class="mx-auto bg-white h-28 w-28 rounded-full">
+                        <img class="p-4" src="./images/service.png" alt="">
+                    </div>
+                    <h4 class="font-bold text-xl my-4">24/7 Services</h4>
+                    <p>Vegetables are an essential part of a healthy diet, providing a rich source of vitamins</p>
+                </div>
+                <div class="bg-common-color text-center p-10 rounded-xl">
+                    <div class="mx-auto bg-white h-28 w-28 rounded-full">
+                        <img class="p-4" src="./images/delivery.png" alt="">
+                    </div>
+                    <h4 class="font-bold text-xl my-4">Fast Delivery</h4>
+                    <p>Anti antioxidants. They come in a variety of colors, flavors, and textures, ranging from </p>
+                </div>
+                <div class="bg-common-color text-center p-10 rounded-xl">
+                    <div class="mx-auto bg-white h-28 w-28 rounded-full">
+                        <img class="p-4" src="./images/healthy.png" alt="">
+                    </div>
+                    <h4 class="font-bold text-xl my-4">Healthy Products</h4>
+                    <p>of vegetables helps support overall health by boosting the immune system, improving</p>
+                </div>
+                
+               </div>
+            </div>
+         </section>
+    </main>
     <footer></footer>
 
 
