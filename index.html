@@ -36,6 +36,104 @@
     </script>
 
     <style>
+
+@keyframes bannerAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+@keyframes bannerText {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(-450px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}
+
+        #banner-text-anim{
+            animation: bannerText 2s ease 0s 1 normal both;
+        }
+
+        #bannerAnimation{
+            animation: bannerAnim 2s ease 0s 1 normal both;
+        }
+
+
         section {
             margin: 80px 0;
         }
@@ -81,7 +179,7 @@
         <section class="bg-gradient-to-t from-[#EFEBE3] to-white">
             <div class="container mx-auto">
                 <div class="text-center">
-                    <h3 class="font-bold md:text-6xl text-2xl">
+                    <h3 id="banner-text-anim" class="font-bold md:text-6xl text-2xl">
                         Freshness <span class="text-accent">You Can</span>
                         <br>
                         <span class="text-accent">Count</span> On, Prices You’ll Love!
@@ -90,7 +188,7 @@
                         to pantry staples, we’ve got you covered every day!</p>
 
                 </div>
-                <div class="flex justify-center">
+                <div id="bannerAnimation" class="flex justify-center">
                     <img src="./images/hero-vegetables.png" alt="">
                 </div>
 
