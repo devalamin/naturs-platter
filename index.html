@@ -37,99 +37,88 @@
 
     <style>
 
-@keyframes bannerAnim {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateY(-250px);
-	}
+       
+        @keyframes bannerAnim {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 0;
+                transform: translateY(-450px);
+            }
 
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0);
-	}
+            38% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateY(0);
+            }
 
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateY(-65px);
-	}
+            55% {
+                animation-timing-function: ease-in;
+                transform: translateY(-65px);
+            }
 
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+            72% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
 
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateY(-28px);
-	}
+            81% {
+                animation-timing-function: ease-in;
+                transform: translateY(-28px);
+            }
 
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+            90% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
 
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateY(-8px);
-	}
+            95% {
+                animation-timing-function: ease-in;
+                transform: translateY(-8px);
+            }
 
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-}
-
-@keyframes bannerText {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateX(-450px);
-	}
-
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateX(0);
-	}
-
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateX(-65px);
-	}
-
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
-
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateX(-28px);
-	}
-
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
-
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateX(-8px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
-}
-
-        #banner-text-anim{
-            animation: bannerText 2s ease 0s infinite normal both;
+            100% {
+                animation-timing-function: ease-out;
+                transform: translateY(0);
+            }
         }
 
-        #bannerAnimation{
+        @keyframes bannerText {
+            0% {
+                transform: translateX(100%);
+                /* Start off-screen to the right */
+            }
+
+            50% {
+                transform: translateX(-40%);
+                /* Bounce off slightly to the left */
+            }
+
+            70% {
+                transform: translateX(15%);
+                /* Small bounce back to the right */
+            }
+
+            85% {
+                transform: translateX(-3%);
+                /* Small bounce to the left */
+            }
+
+            100% {
+                transform: translateX(0);
+                /* Settle in the middle */
+            }
+        }
+
+        body{
+            overflow-x: hidden;
+            
+        }
+
+        #banner-text-anim {
+            animation: bannerText 5s ease 0s infinite normal both;
+        }
+
+        #bannerAnimation {
             animation: bannerAnim 2s ease 0s infinite normal both;
         }
 
@@ -137,17 +126,18 @@
         section {
             margin: 80px 0;
         }
-        
+
         .new-index {
             z-index: 9999;
         }
-	    hr{
-              height:10px;
-             width:100%;
-             margin-top:20px;
-             color: red;
 
-}
+        hr {
+            height: 10px;
+            width: 100%;
+            margin-top: 20px;
+            color: red;
+
+        }
     </style>
 </head>
 
@@ -181,7 +171,7 @@
                 </div>
             </nav>
         </div>
-<hr class="md:hidden bg-accent">
+        <hr class="md:hidden bg-accent">
         <!-- banner part start -->
         <section class="bg-gradient-to-t from-[#EFEBE3] to-white">
             <div class="container mx-auto">
@@ -237,7 +227,7 @@
         </section>
 
 
-       
+
         <!-- popular section start -->
 
         <section class="bg-common-color py-28">
@@ -364,7 +354,7 @@
 
         </section>
 
-            <!-- Arrival part start -->
+        <!-- Arrival part start -->
 
         <section>
             <div class="container mx-auto">
@@ -406,11 +396,13 @@
 
         <!-- Blog part start -->
         <section>
-            <div><h5 class="text-2xl font-bold md:text-5xl text-center mb-5">Our Blogs</h5></div>
-            
+            <div>
+                <h5 class="text-2xl font-bold md:text-5xl text-center mb-5">Our Blogs</h5>
+            </div>
+
 
             <div class="hero block md:space-y-10 bg-gradient-to-bl from-accent to-white py-2 md:py-12">
-              
+
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <img src="./images/tomato.jpg" class="max-w-sm md:max-w-xl shadow-xl rounded-xl" />
                     <div class="text-center md:text-start">
@@ -420,7 +412,8 @@
                             travels long distances and loses its nutritional value over time, locally grown fruits and
                             vegetables retain their essential vitamins and minerals.
                         </p>
-                        <button class="bg-white py-2 px-4 md:py-4 md:px-8 border-2 border-accent text-xl">Explore More</button>
+                        <button class="bg-white py-2 px-4 md:py-4 md:px-8 border-2 border-accent text-xl">Explore
+                            More</button>
                     </div>
                 </div>
                 <div class="">
@@ -429,17 +422,20 @@
                         <div class="text-center md:text-start">
                             <h1 class="text-2xl md:text-5xl font-bold">Spread Freshness To Your Dearest</h1>
                             <p class="py-6">
-                                When you purchase from local farmers, you contribute to the growth of the local economy. Your money stays within the community, helping small-scale farmers sustain their businesses and create jobs.
+                                When you purchase from local farmers, you contribute to the growth of the local economy.
+                                Your money stays within the community, helping small-scale farmers sustain their
+                                businesses and create jobs.
                             </p>
-                            <button class="bg-white py-2 px-4 md:py-4 md:px-8 border-2 border-accent text-xl">Explore More</button>
+                            <button class="bg-white py-2 px-4 md:py-4 md:px-8 border-2 border-accent text-xl">Explore
+                                More</button>
                         </div>
                     </div>
                 </div>
-            
+
             </div>
         </section>
 
-        
+
 
         <!-- Grocery part start -->
         <section class="md:-mb-56 -mb-32 relative z-50">
